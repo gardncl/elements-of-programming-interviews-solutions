@@ -34,8 +34,6 @@ public class IsStringWellFormed {
                 }
             }
         }
-        if (!stack.empty())
-            return false;
-        return true;
+        return stack.empty();
     }
 }

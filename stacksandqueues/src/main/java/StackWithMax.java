@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class StackWithMax {
@@ -8,15 +7,17 @@ public class StackWithMax {
     9.1
     */
 
-    private Integer max = 0;
     private List<Integer> stack = new ArrayList<>();
+    private List<Integer> maxStack = new ArrayList<>();
 
     public StackWithMax() {
 
     }
 
     public Integer max() {
-        return max;
+        if (maxStack.size() > 0)
+            return maxStack.get(maxStack.size()-1);
+        return Integer.MIN_VALUE;
     }
 
     public Integer pop() {
@@ -25,16 +26,14 @@ public class StackWithMax {
         }
         Integer x = stack.get(stack.size()-1);
         stack.remove(stack.size()-1);
-        if (stack.size() > 0 && x == max())
-            max = Collections.max(stack);
-        else if (stack.size() == 0)
-            max = 0;
+        if (stack.size() > 0 && x == max() || stack.size() == 0)
+            maxStack.remove(maxStack.size() - 1);
         return x;
     }
 
     public void push(Integer x) {
-        if (x > max())
-            max = x;
+        if (x >= max())
+            maxStack.add(x);
         stack.add(x);
     }
 }
