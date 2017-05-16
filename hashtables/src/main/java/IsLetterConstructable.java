@@ -1,4 +1,5 @@
 import java.util.Hashtable;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class IsLetterConstructable {
 
@@ -7,19 +8,19 @@ public class IsLetterConstructable {
     */
 
     public static boolean isConstructable(String letterText, String magazineText) {
-        Hashtable<Character, Integer> letters = new Hashtable<>();
+        Hashtable<Character, AtomicInteger> letters = new Hashtable<>();
         for (Character c : magazineText.toLowerCase().toCharArray()) {
             if (!letters.containsKey(c))
-                letters.put(c,1);
+                letters.put(c, new AtomicInteger(1));
             else
-                letters.put(c, letters.get(c)+1);
+                letters.get(c).getAndIncrement();
         }
 
         for (Character c  : letterText.toLowerCase().toCharArray()) {
-            if (!letters.containsKey(c) || letters.get(c) == 0)
+            if (!letters.containsKey(c) || letters.get(c).get() == 0)
                 return false;
             else
-                letters.put(c, letters.get(c)-1);
+                letters.get(c).getAndDecrement();
         }
         return true;
     }
