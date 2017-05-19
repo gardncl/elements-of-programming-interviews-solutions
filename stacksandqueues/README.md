@@ -8,5 +8,5 @@
 - [x] 9.6 ComputeBuildingsWithView
 - [ ] 9.7 ComputeBinaryTreeNodes
 - [ ] 9.8 CircularQueue
-- [ ] 9.9 QueueWithStacks
-- [ ] 9.10 QueueWithMax
+- [x] 9.9 QueueWithStacks
+- [x] 9.10 QueueWithMax
