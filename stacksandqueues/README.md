@@ -6,7 +6,7 @@
 - [x] 9.4 NormalizedPathnames
 - [ ] 9.5 SearchPostingsList
 - [x] 9.6 ComputeBuildingsWithView
-- [ ] 9.7 ComputeBinaryTreeNodes
-- [ ] 9.8 CircularQueue
+- [x] 9.7 ComputeBinaryTreeNodes
+- [x] 9.8 CircularQueue
 - [x] 9.9 QueueWithStacks
 - [x] 9.10 QueueWithMax
