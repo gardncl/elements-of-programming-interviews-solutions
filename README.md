@@ -5,6 +5,10 @@
 This repository contains my solutions for the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash. 
 
+If you want write your own solutions go check out my [other repository] that has only method stubs and test cases.
+
+## Chapter Completion Checklist:
+
 - [ ] Chapter 5: Primitives
 - [ ] Chapter 6: Arrays
 - [ ] Chapter 7: Strings
@@ -21,9 +25,6 @@ This repository contains my solutions for the problems from
 - [ ] Chapter 18: Greedy Algorithms and Invariants
 - [ ] Chapter 19: Graphs
 - [ ] Chapter 20: Parallel Computing
-
-If you want write your own solutions go check out my [other repository] that has only method stubs and test cases.
-
 
 [Elements of Programming Interviews]:http://amzn.to/2pMWIWH
 [other repository]:https://github.com/gardncl/elements-of-programming-interviews
