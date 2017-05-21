@@ -4,7 +4,7 @@
 - [x] 9.2 EvaluateRPNExpressions
 - [x] 9.3 IsStringWellFormed
 - [x] 9.4 NormalizedPathnames
-- [ ] 9.5 SearchPostingsList
+- [x] 9.5 SearchPostingsList
 - [x] 9.6 ComputeBuildingsWithView
 - [x] 9.7 ComputeBinaryTreeNodes
 - [x] 9.8 CircularQueue
