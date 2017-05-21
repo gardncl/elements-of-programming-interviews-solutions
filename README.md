@@ -5,6 +5,23 @@
 This repository contains my solutions for the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash. 
 
+- [ ] Chapter 5: Primitives
+- [ ] Chapter 6: Arrays
+- [ ] Chapter 7: Strings
+- [ ] Chapter 8: Linked Lists
+- [x] Chapter 9: Stacks and Queues
+- [ ] Chapter 10: Binary Trees
+- [ ] Chapter 11: Heaps
+- [ ] Chapter 12: Searching
+- [ ] Chapter 13: Hash Tables
+- [ ] Chapter 14: Sorting
+- [ ] Chapter 15: Binary Search Trees
+- [ ] Chapter 16: Recursion
+- [ ] Chapter 17: Dynamic Programming
+- [ ] Chapter 18: Greedy Algorithms and Invariants
+- [ ] Chapter 19: Graphs
+- [ ] Chapter 20: Parallel Computing
+
 If you want write your own solutions go check out my [other repository] that has only method stubs and test cases.
 
 
