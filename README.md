@@ -5,6 +5,8 @@
 This repository contains my solutions for the problems from
 [Elements Of Programming Interviews] by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash. 
 
+## Chapter Completion Checklist:
+
 - [ ] Chapter 5: Primitives
 - [ ] Chapter 6: Arrays
 - [ ] Chapter 7: Strings
