@@ -1,5 +1,3 @@
-import com.sun.tools.javac.util.StringUtils;
-
 import java.util.Stack;
 
 public class EvaluateRPNExpressions {
