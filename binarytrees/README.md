@@ -4,7 +4,7 @@
 - [x] 10.2 IsSymmetric
 - [x] 10.3 ComputeLowestCommonAncestor
 - [x] 10.4 ComputeLCAWithParent
-- [ ] 10.5 SumRootToLeaf
+- [x] 10.5 SumRootToLeaf
 - [ ] 10.6 FindRootToLeafSum
 - [ ] 10.7 InorderIterative
 - [ ] 10.8 PreorderIterative
