@@ -6,7 +6,7 @@
 - [x] 10.4 ComputeLCAWithParent
 - [x] 10.5 SumRootToLeaf
 - [x] 10.6 FindRootToLeafSum
-- [ ] 10.7 InorderIterative
+- [x] 10.7 InorderIterative
 - [ ] 10.8 PreorderIterative
 - [ ] 10.9 ComputeKthNodeInorder
 - [ ] 10.10 ComputeSuccessor
