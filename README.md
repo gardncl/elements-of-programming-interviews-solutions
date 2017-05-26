@@ -7,7 +7,7 @@ This repository contains my solutions for the problems from
 
 If you want write your own solutions go check out my [other repository] that has only method stubs and test cases.
 
-## Chapter Completion Checklist:
+## Chapter Completion Checklist: [![Build Status](https://travis-ci.org/gardncl/elements-of-programming-interviews-solutions.svg?branch=master)](https://travis-ci.org/gardncl/elements-of-programming-interviews-solutions) [![codecov](https://codecov.io/gh/gardncl/elements-of-programming-interviews-solutions/branch/master/graph/badge.svg)](https://codecov.io/gh/gardncl/elements-of-programming-interviews-solutions)
 
 - [ ] Chapter 5: Primitives
 - [ ] Chapter 6: Arrays
