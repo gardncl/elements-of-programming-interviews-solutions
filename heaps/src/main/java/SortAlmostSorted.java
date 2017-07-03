@@ -1,6 +1,4 @@
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class SortAlmostSorted {
 
@@ -9,8 +7,23 @@ public class SortAlmostSorted {
     */
 
     public static List sort(Iterator<Integer> sequence, int k) {
+        List<Integer> result = new ArrayList<>();
+        PriorityQueue<Integer> shortList = new PriorityQueue<>(Integer::compareTo);
 
-        return Collections.emptyList();
+        //FILL INITIAL SHORT LIST
+        int count = 0;
+        while (count++ < k) {
+            shortList.offer(sequence.next());
+        }
+
+        while (sequence.hasNext()) {
+            result.add(shortList.remove());
+            shortList.offer(sequence.next());
+        }
+
+        while (!shortList.isEmpty())
+            result.add(shortList.remove());
+        return result;
     }
 
 }
