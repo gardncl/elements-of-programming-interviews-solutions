@@ -7,8 +7,19 @@ public class BuySellStockTwice {
     */
 
     public static int buySellStockTwice(List<Integer> A) {
-
-        return 0;
+        int max1 = Integer.MIN_VALUE;
+        int max2 = Integer.MIN_VALUE;
+        int least = Integer.MAX_VALUE;
+        for (Integer i : A) {
+            if (max1 < max2) {
+                int swap = max1;
+                max1 = max2;
+                max2 = swap;
+            }
+            least = i < least ? i : least;
+            max2 = Math.max(max2, i - least);
+        }
+        return max1 + max2;
     }
 
 }
