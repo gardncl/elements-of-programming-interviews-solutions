@@ -3,11 +3,16 @@ import java.util.List;
 public class BuySellStockOnce {
 
     /*
-       6.6
+    6.6
     */
 
     public static int buySellStockOnce(List<Integer> A) {
-
-        return 0;
+        int maximum = Integer.MIN_VALUE;
+        int least = Integer.MAX_VALUE;
+        for (Integer i : A) {
+            least = i < least ? i : least;
+            maximum = Math.max(maximum, i - least);
+        }
+        return maximum;
     }
 }
