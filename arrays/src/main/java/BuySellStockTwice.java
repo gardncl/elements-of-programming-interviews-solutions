@@ -7,8 +7,8 @@ public class BuySellStockTwice {
     */
 
     public static int buySellStockTwice(List<Integer> A) {
-        int max1 = Integer.MIN_VALUE;
-        int max2 = Integer.MIN_VALUE;
+        int max1 = 0;
+        int max2 = 0;
         int least = Integer.MAX_VALUE;
         for (Integer i : A) {
             if (max1 < max2) {

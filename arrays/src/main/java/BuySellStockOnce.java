@@ -7,7 +7,7 @@ public class BuySellStockOnce {
     */
 
     public static int buySellStockOnce(List<Integer> A) {
-        int maximum = Integer.MIN_VALUE;
+        int maximum = 0;
         int least = Integer.MAX_VALUE;
         for (Integer i : A) {
             least = i < least ? i : least;
