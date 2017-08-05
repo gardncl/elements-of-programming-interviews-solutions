@@ -2,7 +2,7 @@
 
 - [x] 16.1 TowersOfHanoi
 - [ ] 16.2 NQueens
-- [ ] 16.3 GeneratePermutations
+- [x] 16.3 GeneratePermutations
 - [ ] 16.4 GeneratePowerSet
 - [ ] 16.5 GenerateSubsetsK
 - [ ] 16.6 GenerateStrings
