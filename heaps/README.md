@@ -2,7 +2,7 @@
 
 - [x] 11.1 MergeSortedFiles
 - [ ] 11.2 SortIncDec
-- [ ] 11.3 SortAlmostSorted
+- [x] 11.3 SortAlmostSorted
 - [ ] 11.4 ComputeKClosest
 - [ ] 11.5 ComputeMedianOnline
 - [ ] 11.6 ComputeKLargest
