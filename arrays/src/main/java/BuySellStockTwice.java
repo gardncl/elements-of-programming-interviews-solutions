@@ -7,19 +7,41 @@ public class BuySellStockTwice {
     */
 
     public static int buySellStockTwice(List<Integer> A) {
-        int max1 = 0;
-        int max2 = 0;
-        int least = Integer.MAX_VALUE;
-        for (Integer i : A) {
-            if (max1 < max2) {
-                int swap = max1;
-                max1 = max2;
-                max2 = swap;
+        Integer a1 = 0, b1 = 0, p1 = 0;
+        Integer a2 = 0, b2 = 0, p2 = 0;
+        Integer min = Integer.MAX_VALUE, minIndex = 0;
+        Integer profit;
+        Integer i = 0;
+        for( Integer price : A) {
+            if (price < min) {
+                min = price;
+                minIndex = i;
             }
-            least = i < least ? i : least;
-            max2 = Math.max(max2, i - least);
+            profit = price - min;
+            if(profit > p2 && a2.equals(minIndex)) {
+                b2 = i;
+            } else if (profit > p2 && !a2.equals(minIndex)) {
+                if (p1  < p2) {
+                    a1 = a2;
+                    b1 = b2;
+                }
+                a2 = minIndex;
+                b2 = i;
+            } else if (profit > p1 && !a2.equals(minIndex)) {
+                a1 = minIndex;
+                b1 = i;
+            }
+
+
+            p1 = profitBetweenPoints(a1, b1, A);
+            p2 = profitBetweenPoints(a2, b2, A);
+            i++;
         }
-        return max1 + max2;
+        return p1 + p2;
+    }
+
+    private static int profitBetweenPoints(int a, int b, List<Integer> A) {
+        return A.get(b) - A.get(a);
     }
 
 }

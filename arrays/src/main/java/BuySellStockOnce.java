@@ -7,12 +7,11 @@ public class BuySellStockOnce {
     */
 
     public static int buySellStockOnce(List<Integer> A) {
-        int maximum = 0;
-        int least = Integer.MAX_VALUE;
-        for (Integer i : A) {
-            least = i < least ? i : least;
-            maximum = Math.max(maximum, i - least);
+        Integer profit = 0, min = Integer.MAX_VALUE;
+        for (Integer price : A) {
+            min = Math.min(min, price);
+            profit = Math.max(profit, price - min);
         }
-        return maximum;
+        return profit;
     }
 }
