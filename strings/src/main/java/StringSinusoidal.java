@@ -5,8 +5,14 @@ public class StringSinusoidal {
     */
 
     public static String snakeString(String s) {
-
-        return "";
+        StringBuilder snake = new StringBuilder();
+        for (int i = 1; i < s.length(); i+=4)
+            snake.append(s.charAt(i));
+        for (int i = 0; i < s.length(); i+=2)
+            snake.append(s.charAt(i));
+        for (int i = 3; i < s.length(); i+=4)
+            snake.append(s.charAt(i));
+        return snake.toString();
     }
 
 }

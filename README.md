@@ -9,9 +9,9 @@ If you want write your own solutions go check out my [other repository] that has
 
 ## Chapter Completion Checklist: [![Build Status](https://travis-ci.org/gardncl/elements-of-programming-interviews-solutions.svg?branch=master)](https://travis-ci.org/gardncl/elements-of-programming-interviews-solutions) [![codecov](https://codecov.io/gh/gardncl/elements-of-programming-interviews-solutions/branch/master/graph/badge.svg)](https://codecov.io/gh/gardncl/elements-of-programming-interviews-solutions)
 
-- [ ] Chapter 5: Primitives
+- [x] Chapter 5: Primitives
 - [ ] Chapter 6: Arrays
-- [ ] Chapter 7: Strings
+- [x] Chapter 7: Strings
 - [ ] Chapter 8: Linked Lists
 - [x] Chapter 9: Stacks and Queues
 - [ ] Chapter 10: Binary Trees
