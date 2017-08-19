@@ -5,7 +5,31 @@ public class ListPivot {
     */
 
     public static ListNode<Integer> pivot(ListNode<Integer> list, int k) {
-        return new ListNode<>(null);
-    }
+        ListNode<Integer> less = new ListNode<>(0, null);
+        ListNode<Integer> equal = new ListNode<>(0, null);
+        ListNode<Integer> greater = new ListNode<>(0, null);
+        ListNode<Integer> lessIter = less;
+        ListNode<Integer> equalIter = equal;
+        ListNode<Integer> greaterIter = greater;
+        ListNode<Integer> iter = list;
 
+        while (iter != null) {
+            if (iter.data < k) {
+                lessIter.next = iter;
+                lessIter = iter;
+            } else if (iter.data == k) {
+                equalIter.next = iter;
+                equalIter = iter;
+            } else {
+                greaterIter.next = iter;
+                greaterIter = iter;
+            }
+            iter = iter.next;
+        }
+        greaterIter.next = null;
+        equalIter.next = greater.next;
+        lessIter.next = equal.next;
+
+        return less.next;
+    }
 }

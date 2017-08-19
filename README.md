@@ -12,7 +12,7 @@ If you want write your own solutions go check out my [other repository] that has
 - [x] Chapter 5: Primitives
 - [ ] Chapter 6: Arrays
 - [x] Chapter 7: Strings
-- [ ] Chapter 8: Linked Lists
+- [x] Chapter 8: Linked Lists
 - [x] Chapter 9: Stacks and Queues
 - [ ] Chapter 10: Binary Trees
 - [ ] Chapter 11: Heaps
